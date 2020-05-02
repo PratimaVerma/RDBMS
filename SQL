@@ -1,5 +1,5 @@
 create table IDA(
-ID number
+ID INT
 );
 
 insert into IDA(ID) values(1);
@@ -8,16 +8,16 @@ insert into IDA(ID) values(1);
 
 
 create table IDB(
-ID number
+ID INT
 );
 
 insert into IDB(ID) values(1);
 
 
 create table Emp(
-eid number,
-ename varchar2(20),
-deptno varchar2(20)
+eid INT,
+ename varchar(20),
+deptno varchar(20)
 );
 
 insert into Emp(eid, ename, deptno) values(1, 'A', 'D1');
@@ -29,8 +29,8 @@ insert into Emp(eid, ename, deptno) values(6, 'F', 'D3');
 
 
 create table dept(
-deptno varchar2(20),
-dname varchar2(20)
+deptno varchar(20),
+dname varchar(20)
 );
 
 insert into dept(deptno, dname) values('D1', 'XYZ');
