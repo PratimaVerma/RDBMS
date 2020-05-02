@@ -1,1 +1,39 @@
+create table IDA(
+ID number
+);
 
+insert into IDA(ID) values(1);
+insert into IDA(ID) values(1);
+insert into IDA(ID) values(1);
+
+
+create table IDB(
+ID number
+);
+
+insert into IDB(ID) values(1);
+
+
+create table Emp(
+eid number,
+ename varchar2(20),
+deptno varchar2(20)
+);
+
+insert into Emp(eid, ename, deptno) values(1, A, D1);
+insert into Emp(eid, ename, deptno) values(2, B, D2);
+insert into Emp(eid, ename, deptno) values(3, C, NULL);
+insert into Emp(eid, ename, deptno) values(4, D, D6);
+insert into Emp(eid, ename, deptno) values(5, E, NULL);
+insert into Emp(eid, ename, deptno) values(6, F, D3);
+
+
+create table dept(
+deptno varchar2(20),
+dname varchar2(20)
+);
+
+insert into dept(deptno, dname) values(D1, XYZ);
+insert into dept(deptno, dname) values(D2, MNO);
+insert into dept(deptno, dname) values(D4, PQR);
+insert into dept(deptno, dname) values(D5, WXY);
