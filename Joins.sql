@@ -1,3 +1,5 @@
+Create Below Table in Hive:
+
 create table IDA(
 ID INT
 );
@@ -65,3 +67,9 @@ insert into dept(deptno, dname) values('D1', 'XYZ');
 insert into dept(deptno, dname) values('D2', 'MNO');
 insert into dept(deptno, dname) values('D4', 'PQR');
 insert into dept(deptno, dname) values('D5', 'WXY');
+
+---------
+spark.table("rajeshkr.IDA").createOrReplaceTempView("IDA")
+spark.table("rajeshkr.IDB").createOrReplaceTempView("IDB")
+spark.table("rajeshkr.Emp").createOrReplaceTempView("Emp")
+spark.table("rajeshkr.dept").createOrReplaceTempView("dept")
