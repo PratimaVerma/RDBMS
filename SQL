@@ -13,41 +13,33 @@ ID INT
 
 insert into IDB(ID) values(1);
 
-mysql> select IDB.ID from IDA inner join IDB on IDA.ID=IDB.ID;
-+------+
-| ID   |
-+------+
-|    1 |
-|    1 |
-|    1 |
-+------+
+mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA inner join IDB on IDA.ID=IDB.ID;
++------+------+
+| IDA  | IDB  |
++------+------+
+|    1 |    1 |
+|    1 |    1 |
+|    1 |    1 |
++------+------+
 
-mysql> select IDA.ID from IDA left join IDB on IDA.ID=IDB.ID;
-+------+
-| ID   |
-+------+
-|    1 |
-|    1 |
-|    1 |
-+------+
+mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA LEFT join IDB on IDA.ID=IDB.ID;
++------+------+
+| IDA  | IDB  |
++------+------+
+|    1 |    1 |
+|    1 |    1 |
+|    1 |    1 |
++------+------+
 
-mysql> select IDB.ID from IDA left join IDB on IDA.ID=IDB.ID;
-+------+
-| ID   |
-+------+
-|    1 |
-|    1 |
-|    1 |
-+------+
+mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA RIGHT join IDB on IDA.ID=IDB.ID;
++------+------+
+| IDA  | IDB  |
++------+------+
+|    1 |    1 |
+|    1 |    1 |
+|    1 |    1 |
++------+------+
 
-mysql> select IDB.ID from IDA RIGHT join IDB on IDA.ID=IDB.ID;
-+------+
-| ID   |
-+------+
-|    1 |
-|    1 |
-|    1 |
-+------+
 
 
 create table Emp(
