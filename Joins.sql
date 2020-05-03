@@ -15,7 +15,7 @@ ID INT
 
 insert into IDB(ID) values(1);
 
-mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA inner join IDB on IDA.ID=IDB.ID;
+select IDA.ID AS IDA, IDB.ID AS IDB from IDA inner join IDB on IDA.ID=IDB.ID;
 +------+------+
 | IDA  | IDB  |
 +------+------+
@@ -24,7 +24,7 @@ mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA inner join IDB on IDA.ID=IDB
 |    1 |    1 |
 +------+------+
 
-mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA LEFT join IDB on IDA.ID=IDB.ID;
+select IDA.ID AS IDA, IDB.ID AS IDB from IDA LEFT join IDB on IDA.ID=IDB.ID;
 +------+------+
 | IDA  | IDB  |
 +------+------+
@@ -33,7 +33,7 @@ mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA LEFT join IDB on IDA.ID=IDB.
 |    1 |    1 |
 +------+------+
 
-mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA RIGHT join IDB on IDA.ID=IDB.ID;
+select IDA.ID AS IDA, IDB.ID AS IDB from IDA RIGHT join IDB on IDA.ID=IDB.ID;
 +------+------+
 | IDA  | IDB  |
 +------+------+
