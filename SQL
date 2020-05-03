@@ -44,8 +44,8 @@ mysql> select IDA.ID AS IDA, IDB.ID AS IDB from IDA RIGHT join IDB on IDA.ID=IDB
 
 create table Emp(
 eid INT,
-ename varchar(20),
-deptno varchar(20)
+ename String,
+deptno String
 );
 
 insert into Emp(eid, ename, deptno) values(1, 'A', 'D1');
@@ -57,8 +57,8 @@ insert into Emp(eid, ename, deptno) values(6, 'F', 'D3');
 
 
 create table dept(
-deptno varchar(20),
-dname varchar(20)
+deptno String,
+dname String
 );
 
 insert into dept(deptno, dname) values('D1', 'XYZ');
